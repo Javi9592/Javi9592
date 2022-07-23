@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Javi9592
 - 👀 I’m interested in Front End Development
-- 🌱 I’m currently learning JQuery
+- 🌱 I’m currently learning Front End in Freecodecamp
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
