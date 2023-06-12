@@ -1,0 +1,14 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"note created"}
+
+note over browser:
+browser starts executing js-code,
+one event handler that affect when
+the submit button is pressing.
+the event handler create a new note 
+,add the note to list notes with push
+and present the list of notes in the page 
+and send the new note to the server
+end note
+
+browser->server: HTTP POST JSON-string
