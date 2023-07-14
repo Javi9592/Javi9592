@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Note from './components/Note'
 import noteService from './services/notes'
 
+
 const Notification = ({ message }) => {
   if (message === null) {
     return null
@@ -43,17 +44,6 @@ const App = () => {
       setNotes(initialNotes)
   })
   }, [])
-
-  /*useEffect(() => {
-    console.log('effect')
-    axios
-      .get('http://localhost:3001/notes')
-      .then(response => {
-        console.log('promise fulfilled')
-        setNotes(response.data)
-      })
-  }, [])*/
-
  
 
   const notesToShow = showAll
@@ -74,8 +64,6 @@ const App = () => {
         setNotes(notes.concat(returnedNote))
         setNewNote('')
       })
-    /*setNotes(notes.concat(noteObject))
-    setNewNote('')*/
   }
 
   const toggleImportanceOf = id => {
@@ -110,7 +98,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Notes</h1>
+      <h1 className='hola'>Notes</h1>
       <Notification message={errorMessage} />
       <div>
         <button onClick={() => setShowAll(!showAll)}>
@@ -118,7 +106,7 @@ const App = () => {
         </button>
       </div>
       <ul>
-        {notesToShow.map(note => 
+        {notesToShow?.map(note => 
           <Note key={note.id} note={note} toggleImportance={() => toggleImportanceOf(note.id)} />
         )}
       </ul>
