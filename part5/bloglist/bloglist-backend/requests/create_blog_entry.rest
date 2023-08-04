@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2NGJiYzE2YTk0Y2I1NWVmOGQzNjJjZGMiLCJpYXQiOjE2OTAyMTU4MzAsImV4cCI6MTY5MDIxOTQzMH0.rNkdD7og6_Eny85YXW-_suTFvVxchNecM_fVxk8llMw
+
+{
+  "title": "TDD harms architecture",
+  "author": "Robert C. Martin",
+  "url": "http://blog.cleancoder.com/uncle-bob/2017/03/03/TDD-Harms-Architecture.html",
+  "likes": 0
+}
