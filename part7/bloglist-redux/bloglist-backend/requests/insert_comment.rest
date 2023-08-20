@@ -1,0 +1,6 @@
+PATCH  http://localhost:3003/api/blogs/64dca6ab95cd921b79fbe0b1/comments
+Content-Type: application/json
+
+{
+    "comment": "Hello"
+}
